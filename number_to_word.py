@@ -1,12 +1,7 @@
 words_upto_19 = [
-    '', "one", "two", "three", "four", "five", "six", "seven", 
-    "eight", "nine", "ten", "eleven", "twelve", "thirteen", 
-    "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", 
-    "nineteen"
+    '', "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"
 ]
-
 words_for_tens = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety']
-
 def number_to_words(n):
     if n == 0:
         return "zero"
@@ -23,11 +18,9 @@ def number_to_words(n):
     elif n<= 999999999999:
         return number_to_words(n//1000000000) + " billion " +(number_to_words(n%1000000000) if n%1000000000!=0  else " ")
     elif n<= 999999999999999:
-        return number_to_words(n//1000000000000) + " trillion " +(number_to_words(n%1000000000000) if n%1000000000000!=0  else " ")
-     
+        return number_to_words(n//1000000000000) + " trillion " +(number_to_words(n%1000000000000) if n%1000000000000!=0  else " ")    
     else:
         return "Number out of range"
-
 n = int(input("Enter a number: "))
 output = number_to_words(n)
 print(output)
