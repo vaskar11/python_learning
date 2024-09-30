@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Game</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #2d699e; /* Light blue background */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #141212;
+        }
+
+        /* Button Styles */
+        button {
+            background-color: #4CAF50; /* Green background */
+            color: white;
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049; /* Darker green on hover */
+            transform: scale(1.05);
+        }
+
+        button:active {
+            transform: scale(0.95); /* Smaller when clicked */
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            button {
+                width: 80%;
+                padding: 12px 20px;
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            button {
+                width: 90%;
+                padding: 10px 15px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Sissor Paper Rock Game ✂ 📜 🪨</h1>
+    <button onclick="
+    const user_choicemsg=('You have choosen sissor');
+    let random_number=Math.random()*3;
+    let computer_choice;
+    if(random_number>0 && random_number<=1){
+    computer_choice='Sissor'
+    }else if(random_number>1 && random_number<=2){
+    computer_choice='Paper'
+    }else{
+    computer_choice='Rock'
+    }
+    const comuter_choicemsg=`Computer choice is ${computer_choice}`;
+
+    let resultmsg;
+    if(computer_choice=== 'Paper'){
+    resultmsg='You win'
+    }else if(computer_choice=='Sissor') {
+    resultmsg='Its a  tie'
+    }else{
+    resultmsg='Computer wins'
+    }
+    alert(`${user_choicemsg}. ${comuter_choicemsg}. ${resultmsg}`)
+    
+    ">Sissor✌️</button>
+
+
+    <button onclick="
+    user_choicemsg=('You have choosen Paper');
+    random_number=Math.random()*3;
+
+    if(random_number>0 && random_number<=1){
+    computer_choice='Sissor'
+    }else if(random_number>1 && random_number<=2){
+    computer_choice='Paper'
+    }else{
+    computer_choice='Rock'
+    }
+    comuter_choicemsg=`Computer choice is ${computer_choice}`;
+
+    if(computer_choice=== 'Rock'){
+    resultmsg='You win'
+    }else if(computer_choice=='Paper') {
+    resultmsg='Its a  tie'
+    }else{
+    resultmsg='Computer wins'
+    }
+    alert(`${user_choicemsg}. ${comuter_choicemsg}. ${resultmsg}`)
+    
+    
+    ">Paper✋</button>
+
+    <button onclick="
+    user_choicemsg=('You have choosen Rock');
+    random_number=Math.random()*3;
+    
+    if(random_number>0 && random_number<=1){
+    computer_choice='Sissor'
+    }else if(random_number>1 && random_number<=2){
+    computer_choice='Paper'
+    }else{
+    computer_choice='Rock'
+    }
+    comuter_choicemsg=`Computer choice is ${computer_choice}`;
+
+    if(computer_choice=== 'Rock'){
+    resultmsg='Its a  tie'
+    }else if(computer_choice=='Paper') {
+    resultmsg='Computer wins'
+    }else{
+    resultmsg='You win'
+    }
+    alert(`${user_choicemsg}. ${comuter_choicemsg}. ${resultmsg}`)
+    
+    
+    ">Rock✊</button>
+
+
+
+    <script>
+
+    </script>
+</body>
+</html>
