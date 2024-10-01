@@ -411,6 +411,42 @@ for i in range(n,-1,-1):
         print(alph[j],end='')
     print()
 
+Q43
+n=6
+start=9
+for i in range(0,n+1):
+    for j in range(0,i):
+        print(start,end='')
+        start+=1
+        if(start==10):
+            start=0
+        
+    print()
+
+44
+n=4
+for i in range(0,n):
+    for j in range(0,n-i):
+        print(j+1,end='')
+    for j in range(0,i):
+        print("_",end='')
+    for j in range(0,i):
+        print("_",end='')
+    for j in range(n-i,0,-1):
+        print(j,end='')
+      
+        
+    print()
+
+45
+n=5
+for i in range(0,n):
+    for j in range(0,int((2*n-2*(i+1))/2)):
+        print(" ",end="")
+    for j in range(0,2*i+1):
+        print(j+1,end='')
+    print()
+
 # Q46
 for i in range(6,0,-1):
     for j in range(1,i+1):
@@ -428,12 +464,66 @@ for i in range(6,-1,-1):
         print(alph[k],end='')
     print()
  
- 
-# Q50
+Q48  
 n=5
-for i in range(n,0,-1):
-    for j in range(i,n+1):
-        print(j,end='')
+for i in range(0,n):
+    for j in range(0,int((2*n-2*(i+1))/2)):
+        print(" ",end="")
+    for j in range(0,2*i+1):
+        print(i+1,end='')
+    print()
+
+#49
+n=4
+start=9
+is9=False
+for i in range(0,n):
+    num=start
+    for j in range(0,2*i+1):
+        print(num,end='')
+        if(num==9):
+            is9=True
+    
+     
+        if(is9):
+            num-=1
+        else:
+            num+=1
+    start-=1
+    is9=False
+        
+    print()
+ 
+
+Q50
+n=5
+temp=n
+for i in range(0,n):
+    
+    for j in range(0,i+1):
+        print(temp,end='')
+        temp+=1
+    temp=n-(i+1)
+    print()
+#Q51
+n=5
+start=n
+isN=False
+for i in range(0,n):
+    num=start
+    for j in range(0,2*i+1):
+        print(num,end='')
+        if(num==n):
+            isN=True
+       
+     
+        if(isN):
+            num-=1
+        else:
+            num+=1
+    start-=1
+    isN=False
+        
     print()
  
 # Q58
@@ -442,3 +532,4 @@ for i in range(1,n+1):
     for j in range(5,i-1,-1):
         print(j,end='')
     print()
+
