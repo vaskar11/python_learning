@@ -241,13 +241,13 @@
 #     print()
     
    
-# Q30
-n=5
-for i in range(1,n+1):
-    print(" "*(n-i),end="")
-    for j in range(i,0,-1):
-        print(j,end=" ")
-    print()
+# # Q30
+# n=5
+# for i in range(1,n+1):
+#     print(" "*(n-i),end="")
+#     for j in range(i,0,-1):
+#         print(j,end=" ")
+#     print()
 
 # # Question 30
 # for i in range(5):
@@ -446,8 +446,7 @@ for i in range(1,n+1):
 #         print("_",end='')
 #     for j in range(n-i,0,-1):
 #         print(j,end='')
-      
-        
+             
 #     print()
 
 # # Q45
@@ -502,11 +501,10 @@ for i in range(1,n+1):
 #         else:
 #             num+=1
 #     start-=1
-#     is9=False
-        
+#     is9=False       
 #     print()
  
-
+  
 # #Q50
 # n=5
 # temp=n
@@ -517,6 +515,8 @@ for i in range(1,n+1):
 #         temp+=1
 #     temp=n-(i+1)
 #     print()
+
+
 # #Q51
 # n=5
 # start=n
@@ -538,6 +538,33 @@ for i in range(1,n+1):
         
 #     print()
  
+# # Q 52
+# rows=5
+# for i in range(5):
+#     print(' '*i, end='')
+#     for k in range(2*(rows-i)-1):
+#         print('*',end='')
+#     print()
+# for i in range(2,rows+1):
+#     print(' '*(rows-i),end='')
+#     for k in range(2*i-1):
+#         print('*',end='')
+#     print()
+  
+# Q53   
+for i in range(9):
+    print("*",end="")
+    for j in range(i+1):
+        if j+1==i:
+            print('*',end=" ")
+            break
+        elif j<i:
+            print(end=" ")
+    print()
+    if(i+1==9):
+        for j in range(10):
+            print('*',end="")
+ 
 # # Q58
 # n=5
 # for i in range(1,n+1):
@@ -545,3 +572,36 @@ for i in range(1,n+1):
 #         print(j,end='')
 #     print()
 
+# # Q 53
+# ## make it clear -------------->
+# for i in range(3,0,-1):
+#     for j in range(3,0,-1):
+#         if i==j:
+#             break
+#         else:
+#             print(j,end="")
+#     for j in range(i*2-1):
+#         print(i,end="")
+#     for j in range(i,4):
+#         if i==j:
+#             continue
+#         else:
+#             print(j,end="")
+#     print()    
+# for i in range(2,4):
+#     for j in range(i+1,4):
+#         if j==i:
+#             continue
+#         else:
+#             print(j,end="")
+#     for j in range(i*2-1):
+#         print(i,end="")
+#     for j in range(2,4):
+#         if i==j:
+#             print(i+1,end="")
+#         else:
+#             break
+#     print()
+    
+    
+    

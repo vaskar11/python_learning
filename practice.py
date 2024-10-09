@@ -88,3 +88,41 @@
 
 # nums = [3, 3, 4, 2, 3, 3, 2, 3, 3]
 # print(find_majority_element(nums))  # Output: 3
+
+#modules
+
+# a=555
+
+# def add(a,b):
+#     print('sum is ',a+b)
+    
+# def product(a,b):
+#     print('the product is: ',a*b)
+    
+    
+# class A:
+#     pass
+
+
+# print(__name__)
+
+# def f():
+#     if __name__ =='__main__':
+#         print('this is direct execution')
+#     else: print('this is indirect execution.')
+    
+# f()
+
+def f1():
+    print('1st function execution.')
+
+def f2():
+    print('2nd function execution.')
+
+def f3():
+    print('3rd function execution.')
+
+if __name__=='__main__'  :
+    f1()
+    f2()
+    f3()
