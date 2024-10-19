@@ -35,4 +35,4 @@ for i in range(6):
 print(otp)
 
 
-# Generate fake employee date for datebase purpose.
+
