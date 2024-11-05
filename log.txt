@@ -1,0 +1,5 @@
+Tuesday October 29/10/2024 14:35:24:DEBUG: root: This code is corrected
+Tuesday October 29/10/2024 14:35:24:INFO: root: This code only information
+Tuesday October 29/10/2024 14:35:24:WARNING: root: this is warning information
+Tuesday October 29/10/2024 14:35:24:ERROR: root: this is error information
+Tuesday October 29/10/2024 14:35:24:CRITICAL: root: this is critical information

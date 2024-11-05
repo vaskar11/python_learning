@@ -1,0 +1,5 @@
+2024-10-29 16:32:09,105: CRITICAL: mylogger: This is critical message
+2024-10-29 16:32:09,108: ERROR: mylogger: This is error message
+2024-10-29 16:32:09,108: WARNING: mylogger: This is warning message
+2024-10-29 16:32:09,108: DEBUG: mylogger: This is debug message
+2024-10-29 16:32:09,108: INFO: mylogger: This is info message
